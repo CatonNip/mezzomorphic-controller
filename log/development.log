@@ -1,0 +1,401 @@
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161218232040)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161218232040"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateChannels (20161218232153)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "channels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "input" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161218232153"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2016-12-19 01:03:48.559351"], ["updated_at", "2016-12-19 01:03:48.559351"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/channels" for ::1 at 2016-12-18 20:39:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChannelsController#index as HTML
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModel::Serializer::Adapter::JsonApi (1.22ms)
+Completed 200 OK in 11ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-12-18 20:39:33 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2016-12-18 20:39:43 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=new):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/users/1" for ::1 at 2016-12-18 20:39:49 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/" for ::1 at 2016-12-18 21:20:46 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-12-18 21:20:46 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2016-12-18 21:23:44 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=new):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/" for ::1 at 2016-12-19 00:12:01 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-12-19 00:12:02 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2016-12-19 00:12:08 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=new):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/users" for ::1 at 2016-12-19 00:12:13 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModel::Serializer::Adapter::JsonApi (1.03ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users.json" for ::1 at 2016-12-19 00:12:22 -0800
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModel::Serializer::Adapter::JsonApi (0.11ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:12:26 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"fvdv", "email"=>"dfvfv", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "fvdv"], ["email", "dfvfv"], ["password", "dfvdfv"], ["created_at", "2016-12-19 18:12:26.520989"], ["updated_at", "2016-12-19 18:12:26.520989"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (24.06ms)
+Completed 201 Created in 47ms (Views: 31.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/new" for ::1 at 2016-12-19 10:12:58 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=new):
+  
+app/controllers/users_controller.rb:45:in `set_user'
+Started GET "/" for ::1 at 2016-12-19 10:13:11 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:19:55 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"_json"=>[{"name"=>"aaron", "email"=>nil, "password"=>"[FILTERED]"}], "user"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:50:in `user_params'
+app/controllers/users_controller.rb:19:in `create'
+Started POST "/users" for ::1 at 2016-12-19 10:21:44 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"_json"=>[{"name"=>"louie", "email"=>"l@l", "password"=>"[FILTERED]"}], "user"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:50:in `user_params'
+app/controllers/users_controller.rb:19:in `create'
+Started GET "/users/new" for ::1 at 2016-12-19 10:25:53 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=new):
+  
+app/controllers/users_controller.rb:45:in `set_user'
+Started GET "/favicon.ico" for ::1 at 2016-12-19 10:25:53 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for ::1 at 2016-12-19 10:29:45 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"_json"=>[{"name"=>"sds", "email"=>"dsd", "password"=>"[FILTERED]"}], "user"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:50:in `user_params'
+app/controllers/users_controller.rb:19:in `create'
+Started POST "/users" for ::1 at 2016-12-19 10:32:14 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"hi", "email"=>"bye", "password"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "hi"], ["email", "bye"], ["password", "sdf"], ["created_at", "2016-12-19 18:32:14.992095"], ["updated_at", "2016-12-19 18:32:14.992095"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (21.59ms)
+Completed 201 Created in 38ms (Views: 26.9ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:32:23 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"dsf", "email"=>"dfs", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dsf"], ["email", "dfs"], ["password", "dfsd"], ["created_at", "2016-12-19 18:32:23.084534"], ["updated_at", "2016-12-19 18:32:23.084534"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.11ms)
+Completed 201 Created in 7ms (Views: 4.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:35:54 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"louie", "email"=>"l@l", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "louie"], ["email", "l@l"], ["password", "pass"], ["created_at", "2016-12-19 18:35:54.104440"], ["updated_at", "2016-12-19 18:35:54.104440"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.75ms)
+Completed 201 Created in 6ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:37:28 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"alex", "email"=>"alex", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "alex"], ["email", "alex"], ["password", "HI"], ["created_at", "2016-12-19 18:37:28.822527"], ["updated_at", "2016-12-19 18:37:28.822527"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.42ms)
+Completed 201 Created in 6ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for ::1 at 2016-12-19 10:48:38 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"hi", "email"=>"hi", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "hi"], ["email", "hi"], ["password", "hi"], ["created_at", "2016-12-19 18:48:39.167734"], ["updated_at", "2016-12-19 18:48:39.167734"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (19.62ms)
+Completed 201 Created in 37ms (Views: 23.7ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:53:00 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["email", ""], ["password", ""], ["created_at", "2016-12-19 18:53:00.882786"], ["updated_at", "2016-12-19 18:53:00.882786"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 7]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.84ms)
+Completed 201 Created in 7ms (Views: 3.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:54:13 -0800
+Started POST "/users" for ::1 at 2016-12-19 10:54:23 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.09ms)
+Completed 422 Unprocessable Entity in 17ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.06ms)
+Completed 422 Unprocessable Entity in 10ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 10:58:27 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"alex", "email"=>"m@m", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "alex"], ["email", "m@m"], ["password", "password"], ["created_at", "2016-12-19 18:58:27.193541"], ["updated_at", "2016-12-19 18:58:27.193541"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 8]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (6.17ms)
+Completed 201 Created in 10ms (Views: 7.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 11:00:22 -0800
+  
+SyntaxError (/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/users_controller.rb:22: syntax error, unexpected ':', expecting '}'
+      render {json: {id: @user.id, auth_key: 0}}...
+                   ^
+/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/users_controller.rb:22: syntax error, unexpected ',', expecting keyword_end
+...: {id: @user.id, auth_key: 0}}, status: :created, location: ...
+...                               ^):
+  
+app/controllers/users_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/users_controller.rb:22: syntax error, unexpected ',', expecting keyword_end
+Started POST "/users" for ::1 at 2016-12-19 11:01:29 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"new", "email"=>"new", "password"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "new"], ["email", "new"], ["password", ""], ["created_at", "2016-12-19 19:01:29.222120"], ["updated_at", "2016-12-19 19:01:29.222120"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 201 Created in 12ms (Views: 3.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for ::1 at 2016-12-19 11:06:07 -0800
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"newer", "email"=>"newer", "password"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "newer"], ["email", "newer"], ["password", "pass"], ["created_at", "2016-12-19 19:06:07.879075"], ["updated_at", "2016-12-19 19:06:07.879075"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 201 Created in 3ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
