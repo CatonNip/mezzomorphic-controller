@@ -2808,3 +2808,471 @@ Processing by ChannelsController#index as JSON
 Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/channels/3" for ::1 at 2016-12-19 22:28:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:30:12 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:31:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:33:07 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:33:09 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:33:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:34:49 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:36:04 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:36:37 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/channels/3" for ::1 at 2016-12-19 22:37:32 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAudioToInputs (20161220054819)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_file_name" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_content_type" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_updated_at" datetime[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220054819"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/channels/3" for ::1 at 2016-12-19 22:38:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChannelsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ChannelSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.15ms)
+Completed 200 OK in 23ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/channels/3" for ::1 at 2016-12-19 22:39:18 -0800
+Processing by ChannelsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ChannelSerializer with ActiveModel::Serializer::Adapter::JsonApi (0.53ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/channels/3" for ::1 at 2016-12-19 22:40:28 -0800
+Processing by ChannelsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ChannelSerializer with ActiveModel::Serializer::Adapter::JsonApi (0.55ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/channels/3" for ::1 at 2016-12-19 22:43:10 -0800
+Processing by ChannelsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ChannelSerializer with ActiveModel::Serializer::Adapter::JsonApi (0.58ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mChannel Load (1.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/channels/3" for ::1 at 2016-12-19 22:45:57 -0800
+Processing by ChannelsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ChannelSerializer with ActiveModel::Serializer::Adapter::JsonApi (0.56ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 22:46:17 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `validates_attatchment_content_type' for #<Class:0x007ff93f283c88>
+Did you mean?  validates_attachment_content_type):
+  
+app/models/input.rb:7:in `<class:Input>'
+app/models/input.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:17:in `block in show'
+app/controllers/users_controller.rb:16:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 22:46:17 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `validates_attatchment_content_type' for #<Class:0x007ff93c2b8698>
+Did you mean?  validates_attachment_content_type):
+  
+app/models/input.rb:7:in `<class:Input>'
+app/models/input.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:17:in `block in show'
+app/controllers/users_controller.rb:16:in `show'
