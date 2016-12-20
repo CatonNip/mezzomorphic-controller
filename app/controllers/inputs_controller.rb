@@ -1,5 +1,13 @@
 class InputsController < ApplicationController
+  def index
+    @inputs = Input.all
+    render json: @inputs, each_serializer: InputSerializer
+  end
 
+  def new
+    @input = Input.new
+  end
+  
   def create
     @input = Input.new(input_params)
 
@@ -14,6 +22,6 @@ class InputsController < ApplicationController
   private
 
   def input_params
-    params.require(:input).permit(:name, :artist, :url)
+    params.require(:input).permit(:name, :artist, :audio)
   end
 end

@@ -6,11 +6,15 @@ class ChannelsController < ApplicationController
     @channels = Channel.all
     # p @channels
     render json: @channels, each_serializer: ChannelSerializer
+    
   end
 
   # GET /channels/1
   def show
-    render json: @channel
+    
+    render json: {channel: @channel,
+                  inputs: @channel.inputs
+                }
   end
 
   # POST /channels
