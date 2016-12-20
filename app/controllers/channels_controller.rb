@@ -4,8 +4,8 @@ class ChannelsController < ApplicationController
   # GET /channels
   def index
     @channels = Channel.all
-
-    render json: @channels
+    # p @channels
+    render json: @channels, each_serializer: ChannelSerializer
   end
 
   # GET /channels/1
@@ -46,6 +46,6 @@ class ChannelsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def channel_params
-      params.require(:channel).permit(:name, :description, :input)
+      params.require(:channel).permit(:name, :description)
     end
 end

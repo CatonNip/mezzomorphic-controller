@@ -15,6 +15,8 @@ gem 'puma', '~> 3.0'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'paperclip'
+gem 'aws-sdk'
 
 # gem 'bcrypt', '~> 3.1.7'
 
