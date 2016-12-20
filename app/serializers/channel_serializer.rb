@@ -1,4 +1,6 @@
 class ChannelSerializer < ActiveModel::Serializer
-    attributes :name, :desctiption, :id, :user, :input
-    belongs_to :user
+    attributes :name, :description, :id, :user
+    has_many :inputs
+    # belongs_to :user
+
 end

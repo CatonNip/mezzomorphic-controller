@@ -399,3 +399,2037 @@ Processing by UsersController#create as JSON
 Completed 201 Created in 3ms (Views: 0.5ms | ActiveRecord: 0.9ms)
 
 
+Started POST "/users" for ::1 at 2016-12-19 11:18:06 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"student", "email"=>"one", "password"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "student"], ["email", "one"], ["password", "password"], ["created_at", "2016-12-19 19:18:06.733629"], ["updated_at", "2016-12-19 19:18:06.733629"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 201 Created in 16ms (Views: 3.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/11" for ::1 at 2016-12-19 11:18:06 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 11]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (15.63ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2" for ::1 at 2016-12-19 11:19:30 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.33ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for ::1 at 2016-12-19 11:20:45 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.42ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/3" for ::1 at 2016-12-19 11:21:10 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.29ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:21:52 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.39ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:23:06 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.42ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:23:16 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.65ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:24:28 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.38ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:24:57 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.41ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:26:07 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.31ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:26:18 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.69ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:26:34 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.38ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:26:49 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.37ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:27:44 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.28ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:29:34 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.65ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:29:46 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.42ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/10" for ::1 at 2016-12-19 11:30:30 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (10.39ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/10" for ::1 at 2016-12-19 11:30:32 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 10]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.69ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:30:35 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.41ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2016-12-19 11:31:24 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.45ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2016-12-19 11:31:42 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.48ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2016-12-19 11:31:46 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 2]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.66ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for ::1 at 2016-12-19 11:31:54 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 5]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.4ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:31:59 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.46ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mChannel Load (1.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("name", "description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pop"], ["description", "i dont like pop"], ["user_id", 4], ["created_at", "2016-12-19 19:36:01.447343"], ["updated_at", "2016-12-19 19:36:01.447343"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/4" for ::1 at 2016-12-19 11:36:36 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (29.05ms)
+Completed 200 OK in 45ms (Views: 32.2ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/users/4" for ::1 at 2016-12-19 11:41:34 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (27.96ms)
+Completed 200 OK in 46ms (Views: 31.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:41:37 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.55ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:41:54 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.75ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:43:10 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.11ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:43:32 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.21ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:45:13 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.18ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:47:39 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.88ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:48:14 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.93ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mChannel Load (1.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "channels" SET "input" = ?, "updated_at" = ? WHERE "channels"."id" = ?[0m  [["input", "---\n- new.com\n"], ["updated_at", "2016-12-19 19:55:16.154553"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/users/4" for ::1 at 2016-12-19 11:56:01 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (27.39ms)
+Completed 200 OK in 46ms (Views: 31.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 11:57:18 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.55ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:03:35 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:04:12 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.45ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:07:22 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.08ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:07:27 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.07ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:07:49 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.22ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:09:05 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:11:14 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.14ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:11:15 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.19ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:12:03 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.94ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:13:16 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.23ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:22:42 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.14ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:23:51 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.12ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:23:52 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.2ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/4" for ::1 at 2016-12-19 12:23:56 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/users/4"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 12:24:04 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.09ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:25:51 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.4ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:25:53 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (4.86ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users/4" for ::1 at 2016-12-19 12:25:57 -0800
+Processing by UsersController#update as JSON
+  Parameters: {"user"=>{"name"=>"louie", "email"=>"l@c"}, "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "l@c"], ["updated_at", "2016-12-19 20:25:57.257002"], ["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.17ms)
+Completed 200 OK in 17ms (Views: 3.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:27:07 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.93ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:29:07 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.88ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:29:08 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.88ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users/4" for ::1 at 2016-12-19 12:29:13 -0800
+Processing by UsersController#update as JSON
+  Parameters: {"user"=>{"name"=>"louie", "email"=>"l@chen"}, "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "l@chen"], ["updated_at", "2016-12-19 20:29:13.478658"], ["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.94ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/users/4" for ::1 at 2016-12-19 12:29:57 -0800
+Processing by UsersController#update as JSON
+  Parameters: {"user"=>{"name"=>"louie", "email"=>"l@chen"}, "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.92ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:29:57 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.71ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:30:06 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.75ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:30:06 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.99ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users/4" for ::1 at 2016-12-19 12:30:13 -0800
+Processing by UsersController#update as JSON
+  Parameters: {"user"=>{"name"=>"louie", "email"=>"louie@chen"}, "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "louie@chen"], ["updated_at", "2016-12-19 20:30:13.217291"], ["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.89ms)
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 12:30:13 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.54ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateInputs (20161219222856)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "inputs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "artist" varchar, "url" varchar, "channel_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","name","email","password","created_at","updated_at")
+                     SELECT "id","name","email","password","created_at","updated_at" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","name","email","password","created_at","updated_at")
+                     SELECT "id","name","email","password","created_at","updated_at" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161219222856"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInput Load (0.3ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "inputs" ("name", "artist", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "toxic"], ["artist", "Britney Spears"], ["url", "wwww.diditagaing.com"], ["created_at", "2016-12-19 22:39:16.287323"], ["updated_at", "2016-12-19 22:39:16.287323"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "inputs" ("name", "artist", "url", "channel_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "toxic"], ["artist", "Britney Spears"], ["url", "wwww.diditagaing.com"], ["channel_id", 1], ["created_at", "2016-12-19 22:39:43.076197"], ["updated_at", "2016-12-19 22:39:43.076197"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mInput Load (0.2ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs"[0m
+  [1m[36mInput Load (0.3ms)[0m  [1m[34mSELECT  "inputs".* FROM "inputs" ORDER BY "inputs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "inputs" WHERE "inputs"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mInput Load (0.3ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs"[0m
+Started GET "/users/4" for ::1 at 2016-12-19 14:41:53 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (29.6ms)
+Completed 200 OK in 47ms (Views: 33.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 14:42:58 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.38ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."user_id" = ? ORDER BY "channels"."id" ASC LIMIT ?[0m  [["user_id", 4], ["LIMIT", 1]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 1]]
+Started GET "/users/4" for ::1 at 2016-12-19 14:47:30 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (14.54ms)
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 14:48:48 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (3.53ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 14:53:14 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (11.49ms)
+Completed 200 OK in 32ms (Views: 21.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 14:53:30 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (2.93ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 14:58:00 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (12.83ms)
+Completed 200 OK in 22ms (Views: 13.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 14:59:11 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (12.17ms)
+Completed 200 OK in 22ms (Views: 13.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:03:35 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (25.44ms)
+Completed 200 OK in 45ms (Views: 30.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:07:34 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb:1: class/module name must be CONSTANT):
+  
+app/serializers/channel_serializer.rb:1: class/module name must be CONSTANT
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:07:36 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb:1: class/module name must be CONSTANT):
+  
+app/serializers/channel_serializer.rb:1: class/module name must be CONSTANT
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:08:37 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+
+  
+LoadError (Unable to autoload constant ChannelSerializer, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb to define it):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:15:54 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms)
+
+
+  
+LoadError (Unable to autoload constant ChannelSerializer, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb to define it):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:15:57 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+LoadError (Unable to autoload constant ChannelSerializer, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb to define it):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:17:35 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+
+  
+LoadError (Unable to autoload constant ChannelSerializer, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb to define it):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:18:08 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+LoadError (Unable to autoload constant ChannelSerializer, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb to define it):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:19:50 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+LoadError (Unable to autoload constant ChannelSerializer, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/serializers/channel_serializer.rb to define it):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:2:in `<module:V0>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:20:54 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (35.77ms)
+Completed 200 OK in 47ms (Views: 36.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:23:58 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 15:24:50 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered V0::UserSerializer with User (0.52ms)
+Completed 200 OK in 25ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:26:13 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered V0::UserSerializer with User (0.26ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:26:15 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered V0::UserSerializer with User (0.34ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:28:09 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered V0::UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (25.76ms)
+Completed 200 OK in 47ms (Views: 25.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:29:43 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered V0::UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (25.39ms)
+Completed 200 OK in 45ms (Views: 25.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 15:32:35 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:269:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:269:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 15:33:31 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:269:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:269:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/v0/users/4" for ::1 at 2016-12-19 15:37:08 -0800
+  
+LoadError (Unable to autoload constant V0::UsersController, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/v0/users_controller.rb to define it):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:202:in `const_missing'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:271:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:271:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:582:in `get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:613:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/v0/users/4" for ::1 at 2016-12-19 15:38:31 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+LoadError (Unable to autoload constant V0::UsersController, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/v0/users_controller.rb to define it):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:202:in `const_missing'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:271:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:271:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:582:in `get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:613:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/v0/users/4" for ::1 at 2016-12-19 15:38:38 -0800
+  
+LoadError (Unable to autoload constant V0::UsersController, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/v0/users_controller.rb to define it):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:202:in `const_missing'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:284:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:284:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:582:in `get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:613:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/v0/users/4" for ::1 at 2016-12-19 15:38:39 -0800
+  
+LoadError (Unable to autoload constant V0::UsersController, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/v0/users_controller.rb to define it):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:202:in `const_missing'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:284:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:284:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:582:in `get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:613:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/v0/users/4" for ::1 at 2016-12-19 15:39:26 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+LoadError (Unable to autoload constant V0::UsersController, expected /Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/v0/users_controller.rb to define it):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:202:in `const_missing'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:271:in `const_get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:271:in `block in constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `inject'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/inflector/methods.rb:267:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:582:in `get'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/dependencies.rb:613:in `constantize'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/http/request.rb:82:in `controller_class'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:43:in `controller'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:29:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/v0/users/4" for ::1 at 2016-12-19 16:59:23 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/v0/users/4"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:02:28 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered UserSerializer with ActiveModel::Serializer::Adapter::JsonApi (30.0ms)
+Completed 200 OK in 48ms (Views: 33.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 17:07:48 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:12:46 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:13:11 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:13:31 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:13:59 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:22:18 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:26:07 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2016-12-19 17:26:10 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2016-12-19 17:29:57 -0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/abstract_controller/base.rb:121:in `process'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:194:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_controller/metal.rb:266:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `each'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/journey/router.rb:26:in `serve'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:555:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/" for ::1 at 2016-12-19 17:30:19 -0800
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 34ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usrs" for ::1 at 2016-12-19 17:30:44 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/usrs"):
+  
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/Users/Alex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2016-12-19 17:30:48 -0800
+Processing by UsersController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Symbol (0.05ms)
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2016-12-19 17:30:54 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.73ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActiveRecord::Associations::CollectionProxy []>):
+  
+app/controllers/users_controller.rb:13:in `show'
+Started GET "/users" for ::1 at 2016-12-19 17:31:02 -0800
+Processing by UsersController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Symbol (0.05ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2016-12-19 17:31:56 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Symbol (0.08ms)
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 17:33:52 -0800
+  
+SyntaxError (/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/users_controller.rb:11: syntax error, unexpected keyword_end
+/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/users_controller.rb:55: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:11: syntax error, unexpected keyword_end
+app/controllers/users_controller.rb:55: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/4" for ::1 at 2016-12-19 17:35:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/users_controller.rb:11: syntax error, unexpected keyword_end
+/Users/Alex/Desktop/mezzo/mezzomorphic_controller/mezzomorphic-controller/app/controllers/users_controller.rb:55: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:11: syntax error, unexpected keyword_end
+app/controllers/users_controller.rb:55: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/4" for ::1 at 2016-12-19 17:36:01 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.4ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (21.69ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.5ms)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<Channel::ActiveRecord_Associations_CollectionProxy:0x007fc802ab1a68>):
+  
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 17:36:47 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.44ms)
+Completed 200 OK in 27ms (Views: 16.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 17:37:49 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.15ms)
+Completed 200 OK in 25ms (Views: 10.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 17:41:04 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `inputs' for #<Channel::ActiveRecord_Associations_CollectionProxy:0x007fc8058c94f0>):
+  
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users/4" for ::1 at 2016-12-19 18:35:39 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.05ms)
+Completed 200 OK in 21ms (Views: 8.6ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("name", "description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "classic rock"], ["description", "music n stuff"], ["user_id", 4], ["created_at", "2016-12-20 02:38:20.309821"], ["updated_at", "2016-12-20 02:38:20.309821"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "inputs" ("name", "artist", "url", "channel_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Oh Darling"], ["artist", "Beattles"], ["url", "www.urls.com"], ["channel_id", 2], ["created_at", "2016-12-20 02:39:58.811428"], ["updated_at", "2016-12-20 02:39:58.811428"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+Started GET "/users/4" for ::1 at 2016-12-19 18:41:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.6ms)
+Completed 200 OK in 42ms (Views: 13.8ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mInput Load (0.2ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 2]]
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "channels" WHERE "channels"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("name", "description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "classic rock"], ["description", "music n stuff"], ["user_id", 4], ["created_at", "2016-12-20 02:50:38.567017"], ["updated_at", "2016-12-20 02:50:38.567017"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[31mDELETE FROM "channels" WHERE "channels"."id" = ?[0m  [["id", 1]]
+Started GET "/users/4" for ::1 at 2016-12-19 18:53:16 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.05ms)
+Completed 200 OK in 40ms (Views: 11.7ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveInputFromChannel (20161220025442)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "achannels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "input" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "achannels" ("id","name","description","input","user_id","created_at","updated_at")
+                     SELECT "id","name","description","input","user_id","created_at","updated_at" FROM "channels"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "channels"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "channels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("id","name","description","user_id","created_at","updated_at")
+                     SELECT "id","name","description","user_id","created_at","updated_at" FROM "achannels"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "achannels"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220025442"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mChannel Load (1.0ms)[0m  [1m[34mSELECT "channels".* FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" ORDER BY "channels"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "inputs" ("name", "artist", "url", "channel_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "say yes"], ["artist", "taylor swift"], ["url", "www.url.com"], ["channel_id", 3], ["created_at", "2016-12-20 02:57:59.869603"], ["updated_at", "2016-12-20 02:57:59.869603"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/4" for ::1 at 2016-12-19 18:58:23 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.24ms)
+Completed 200 OK in 41ms (Views: 14.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:03:14 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.3ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.83ms)
+Completed 200 OK in 53ms (Views: 3.6ms | ActiveRecord: 2.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "inputs" ("name", "artist", "url", "channel_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "love story"], ["artist", "taylor swift"], ["url", "www.url.com"], ["channel_id", 3], ["created_at", "2016-12-20 03:04:21.609283"], ["updated_at", "2016-12-20 03:04:21.609283"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/4" for ::1 at 2016-12-19 19:05:15 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:11:11 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.2ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.75ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:11:35 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.89ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:13:34 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.9ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:14:02 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.78ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:14:44 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:15:23 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:15:41 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.85ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:18:15 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.83ms)
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:19:13 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.71ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:24:20 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:25:39 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.2ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.76ms)
+Completed 200 OK in 31ms (Views: 2.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/4" for ::1 at 2016-12-19 19:26:30 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT "channels".* FROM "channels" WHERE "channels"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[36mInput Load (0.1ms)[0m  [1m[34mSELECT "inputs".* FROM "inputs" WHERE "inputs"."channel_id" = ?[0m  [["channel_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.81ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+

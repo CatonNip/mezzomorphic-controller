@@ -6,13 +6,23 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    render json: @users, each_serializer: UserSerializer
   end
 
-  # GET /users/1
+  # GET /users/
   def show
-    render json: @user
+    @inputs = []
+
+    @user.channels.each do |channel|
+      @inputs += channel.inputs
+    end
+    @inputs.flatten
+    render json: {user: @user,
+                  channels: @user.channels,
+                  inputs: @inputs
+                  } 
   end
+
 
   # POST /users
   def create
