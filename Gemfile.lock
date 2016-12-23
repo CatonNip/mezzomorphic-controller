@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 0dc9eb46ee47b1196583fd860b25242b6421ab1e
+  revision: fd63aa02289d64e9d14fe56723f1de64bca3bb1f
   specs:
     actioncable (5.1.0.alpha)
       actionpack (= 5.1.0.alpha)
@@ -66,13 +66,13 @@ GEM
       activemodel (>= 4.1, < 6)
       jsonapi (= 0.1.1.beta2)
     arel (7.1.4)
-    aws-sdk (2.6.40)
-      aws-sdk-resources (= 2.6.40)
-    aws-sdk-core (2.6.40)
+    aws-sdk (2.6.42)
+      aws-sdk-resources (= 2.6.42)
+    aws-sdk-core (2.6.42)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.40)
-      aws-sdk-core (= 2.6.40)
+    aws-sdk-resources (2.6.42)
+      aws-sdk-core (= 2.6.42)
     aws-sigv4 (1.0.0)
     builder (3.2.2)
     byebug (9.0.6)
