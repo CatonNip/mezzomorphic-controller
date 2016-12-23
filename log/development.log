@@ -3931,3 +3931,109 @@ Processing by ChannelsController#index as JSON
 Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-22 21:21:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:575:in `check_pending!'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activerecord/lib/active_record/migration.rb:551:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activesupport/lib/active_support/callbacks.rb:104:in `run_callbacks'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:36:in `call_app'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `block in call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activesupport/lib/active_support/tagged_logging.rb:69:in `tagged'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/railties/lib/rails/rack/logger.rb:24:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/actionpack/lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+/home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/railties/lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (125.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (114.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161218232040)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161218232040"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateChannels (20161218232153)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "channels" ("id" bigserial primary key, "name" character varying, "description" text, "input" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161218232153"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateInputs (20161219222856)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "inputs" ("id" bigserial primary key, "name" character varying, "artist" character varying, "url" character varying, "channel_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161219222856"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveInputFromChannel (20161220025442)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "channels" DROP "input"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161220025442"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAudioToInputs (20161220054819)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_file_name" character varying[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_content_type" character varying[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_file_size" integer[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "inputs" ADD "audio_updated_at" timestamp[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161220054819"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2016-12-23 05:22:21.864881"], ["updated_at", "2016-12-23 05:22:21.864881"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2016-12-22 21:22:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/sanauu/.bundle/ruby/2.3.0/rails-b2672c739b9f/railties/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/channels" for 127.0.0.1 at 2016-12-22 21:22:44 -0800
+Processing by ChannelsController#index as HTML
+  [1m[36mChannel Load (1.0ms)[0m  [1m[34mSELECT "channels".* FROM "channels"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModel::Serializer::Adapter::JsonApi (1.04ms)
+Completed 200 OK in 23ms (Views: 4.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-12-22 21:22:51 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 18ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:55:in `set_user'
